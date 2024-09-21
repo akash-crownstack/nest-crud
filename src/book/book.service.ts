@@ -1,6 +1,8 @@
 import { PrismaService } from 'src/prisma.service';
 import { Book } from './book.model';
+import { Injectable } from '@nestjs/common';
 
+@Injectable()
 export class BookService {
   constructor(private prisma: PrismaService) {}
 
